@@ -1,0 +1,67 @@
+{% extends '_base.html' %}
+{% load static %}
+
+{% block content %}
+
+  <main class="main" style="background-color: #2d2d2d; color: white; min-height: 100vh; display: flex; justify-content: center; align-items: center;">
+    <div class="container text-center">
+      <h2 class="text-center" style="color: #cfa12c;">نمودار پروژه‌ها بر اساس سال ساخت</h2>
+      <canvas id="projectChart"></canvas>
+    </div>
+  </main>
+
+  <!-- لود کردن Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const ctx = document.getElementById("projectChart").getContext("2d");
+
+      // گرفتن داده‌ها از ویو
+      const chartData = JSON.parse('{{ chart_data|escapejs }}');
+
+      new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: chartData.labels, // اسم پروژه‌ها
+          datasets: [{
+            label: "سال ساخت پروژه",
+            data: chartData.data, // سال‌های ساخت
+            borderColor: "#ffb700",
+            backgroundColor: "rgba(255, 183, 0, 0.4)",
+            borderWidth: 3,
+            fill: true,
+            tension: 0.3
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              display: true,
+              position: "top",
+              labels: {
+                color: "white"
+              }
+            }
+          },
+          scales: {
+            x: {
+              ticks: {
+                color: "white"
+              }
+            },
+            y: {
+              beginAtZero: false,
+              ticks: {
+                stepSize: 1,
+                color: "white"
+              }
+            }
+          }
+        }
+      });
+    });
+  </script>
+
+{% endblock %}

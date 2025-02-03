@@ -1,0 +1,31 @@
+{% extends "_base.html" %} 
+{% load static %}
+{% block content %}
+    <h1 class="text-center">نتایج جستجو</h1>
+    <p class="text-center">شما جستجو کردید برای: "{{ query }}"</p>
+
+    {% if results %}
+        <div class="product-results">
+            <ul class="list-unstyled d-flex flex-wrap justify-content-center">
+                {% for product in results %}
+                    <li class="product-item m-3">
+                        <div class="product-card">
+                            <a href="{% url 'project_detail' product.id %}" class="d-block text-center">
+                                {% if product.image %}
+                                    <img src="{{ product.image.url }}" alt="{{ product.title }}" 
+                                         width="200" height="200" style="object-fit: cover;">
+                                {% else %}
+                                    <img src="{% static 'images/default.jpg' %}" alt="تصویری در دسترس نیست" 
+                                         width="200" height="200" style="object-fit: cover;">
+                                {% endif %}
+                                <h2 class="product-title">{{ product.title }}</h2>
+                            </a>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% else %}
+        <p class="text-center">هیچ نتیجه‌ای پیدا نشد.</p>
+    {% endif %}
+{% endblock %}

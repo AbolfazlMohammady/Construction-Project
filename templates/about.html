@@ -1,0 +1,423 @@
+{% extends '_base.html' %}
+{% load static %}
+{% block content %}
+  <main class="main">
+
+    <!-- عنوان صفحه -->
+    <div class="page-title dark-background" style="background-image: url(assets/img/page-title-bg.jpg);">
+      <div class="container position-relative">
+        <h1>درباره ما</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">خانه</a></li>
+            <li class="current">درباره ما</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- پایان عنوان صفحه -->
+
+    <!-- بخش درباره ما -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row position-relative">
+
+          <div class="col-lg-7 about-img" data-aos="zoom-out" data-aos-delay="200">
+            <img src="{% static 'assets/img/about.jpg' %}" alt="تصویر درباره ما">
+          </div>
+        
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="inner-title">توسعه و پیشرفت</h2>
+            <div class="our-story">
+              <h4>تاسیس در سال ۱۳۶۷</h4>
+              <h3>داستان ما</h3>
+              <p>ما با ایده‌های نو و خلاقانه شروع کردیم و همواره به دنبال ارائه بهترین خدمات به مشتریان خود بوده‌ایم. تیم ما متشکل از افراد متخصص و با تجربه است که با تلاش و پشتکار، به اهداف بزرگی دست یافته‌اند.</p>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> <span>تضمین کیفیت خدمات</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>پشتیبانی ۲۴ ساعته</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>رضایت مشتری اولویت ماست</span></li>
+              </ul>
+              <p>ما همواره به دنبال بهبود و توسعه خدمات خود هستیم و از نظرات و پیشنهادات شما استقبال می‌کنیم.</p>
+
+              <div class="watch-video d-flex align-items-center position-relative">
+                <i class="bi bi-play-circle"></i>
+                <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox stretched-link">تماشای ویدیو</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- پایان بخش درباره ما -->
+
+    <!-- بخش آمار -->
+    <section id="stats-counter" class="stats-counter section">
+
+      <!-- عنوان بخش -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>آمار</h2>
+        <p>ما با اعداد و ارقامی که نشان‌دهنده موفقیت‌های ما هستند، پیشرفت می‌کنیم.</p>
+      </div><!-- پایان عنوان بخش -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+                <p>مشتریان راضی</p>
+              </div>
+            </div>
+          </div><!-- پایان آیتم آمار -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-journal-richtext color-orange flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+                <p>پروژه‌ها</p>
+              </div>
+            </div>
+          </div><!-- پایان آیتم آمار -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-headset color-green flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+                <p>ساعت پشتیبانی</p>
+              </div>
+            </div>
+          </div><!-- پایان آیتم آمار -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-people color-pink flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+                <p>تیم حرفه‌ای</p>
+              </div>
+            </div>
+          </div><!-- پایان آیتم آمار -->
+
+        </div>
+
+      </div>
+
+    </section><!-- پایان بخش آمار -->
+
+    <!-- بخش خدمات جایگزین -->
+    <section id="alt-services" class="alt-services section">
+
+      <div class="container">
+
+        <div class="row justify-content-around gy-4">
+          <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src="{% static 'assets/img/alt-services.jpg' %}" alt=""></div>
+
+          <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <h3>ارائه بهترین خدمات</h3>
+            <p>ما با ارائه خدمات با کیفیت و نوآورانه، رضایت مشتریان خود را جلب کرده‌ایم. تیم ما همواره در تلاش است تا بهترین راه‌حل‌ها را برای شما ارائه دهد.</p>
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-easel flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">طراحی حرفه‌ای</a></h4>
+                <p>ما با استفاده از آخرین تکنولوژی‌ها، طراحی‌های منحصر به فردی ارائه می‌دهیم.</p>
+              </div>
+            </div><!-- پایان جعبه آیکون -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-patch-check flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">تضمین کیفیت</a></h4>
+                <p>کیفیت خدمات ما همواره در بالاترین سطح قرار دارد.</p>
+              </div>
+            </div><!-- پایان جعبه آیکون -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-brightness-high flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">پشتیبانی ۲۴ ساعته</a></h4>
+                <p>تیم پشتیبانی ما همواره آماده پاسخگویی به سوالات شماست.</p>
+              </div>
+            </div><!-- پایان جعبه آیکون -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="600">
+              <i class="bi bi-brightness-high flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">رضایت مشتری</a></h4>
+                <p>رضایت مشتریان ما اولویت اصلی ماست.</p>
+              </div>
+            </div><!-- پایان جعبه آیکون -->
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- پایان بخش خدمات جایگزین -->
+
+    <!-- بخش خدمات جایگزین ۲ -->
+    <section id="alt-services-2" class="alt-services-2 section">
+
+      <div class="container">
+
+        <div class="row justify-content-around gy-4">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+            <h3>ارائه راه‌حل‌های نوآورانه</h3>
+            <p>ما با ارائه راه‌حل‌های نوآورانه و خلاقانه، به مشتریان خود کمک می‌کنیم تا به اهداف خود دست یابند.</p>
+
+            <div class="row">
+
+              <div class="col-lg-6 icon-box d-flex">
+                <i class="bi bi-easel flex-shrink-0"></i>
+                <div>
+                  <h4>طراحی وب</h4>
+                  <p>طراحی وب‌سایت‌های مدرن و کاربرپسند.</p>
+                </div>
+              </div><!-- پایان جعبه آیکون -->
+
+              <div class="col-lg-6 icon-box d-flex">
+                <i class="bi bi-patch-check flex-shrink-0"></i>
+                <div>
+                  <h4>توسعه نرم‌افزار</h4>
+                  <p>توسعه نرم‌افزارهای سفارشی برای نیازهای شما.</p>
+                </div>
+              </div><!-- پایان جعبه آیکون -->
+
+              <div class="col-lg-6 icon-box d-flex">
+                <i class="bi bi-brightness-high flex-shrink-0"></i>
+                <div>
+                  <h4>سئو و بهینه‌سازی</h4>
+                  <p>بهینه‌سازی وب‌سایت‌ها برای موتورهای جستجو.</p>
+                </div>
+              </div><!-- پایان جعبه آیکون -->
+
+              <div class="col-lg-6 icon-box d-flex">
+                <i class="bi bi-brightness-high flex-shrink-0"></i>
+                <div>
+                  <h4>پشتیبانی فنی</h4>
+                  <p>پشتیبانی فنی ۲۴ ساعته برای مشتریان.</p>
+                </div>
+              </div><!-- پایان جعبه آیکون -->
+
+            </div>
+
+          </div>
+
+          <div class="features-image col-lg-5 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
+            <img src="{% static 'assets/img/features-3-2.jpg' %}" alt="">
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- پایان بخش خدمات جایگزین ۲ -->
+
+    <!-- بخش تیم -->
+    <section id="team" class="team section">
+
+      <!-- عنوان بخش -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>تیم ما</h2>
+        <p>تیم متخصص و با تجربه ما همواره در تلاش است تا بهترین خدمات را به شما ارائه دهد.</p>
+      </div><!-- پایان عنوان بخش -->
+
+      <div class="container">
+
+        <div class="row gy-5">
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+            <div class="member-img">
+              <img src="{% static 'assets/img/team/team-1.jpg' %}" class="img-fluid" alt="">
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info text-center">
+              <h4>والتر وایت</h4>
+              <span>مدیر عامل</span>
+              <p>والتر وایت با بیش از ۲۰ سال تجربه در صنعت، تیم ما را به سمت موفقیت هدایت می‌کند.</p>
+            </div>
+          </div><!-- پایان عضو تیم -->
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
+            <div class="member-img">
+              <img src="{% static 'assets/img/team/team-2.jpg' %}" class="img-fluid" alt="">
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info text-center">
+              <h4>سارا جانسون</h4>
+              <span>مدیر محصول</span>
+              <p>سارا جانسون با تخصص در مدیریت محصول، اطمینان حاصل می‌کند که محصولات ما بهترین کیفیت را دارند.</p>
+            </div>
+          </div><!-- پایان عضو تیم -->
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
+            <div class="member-img">
+              <img src="{% static 'assets/img/team/team-3.jpg' %}" class="img-fluid" alt="">
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info text-center">
+              <h4>ویلیام اندرسون</h4>
+              <span>مدیر فنی</span>
+              <p>ویلیام اندرسون با تخصص در فناوری‌های پیشرفته، تیم فنی ما را هدایت می‌کند.</p>
+            </div>
+          </div><!-- پایان عضو تیم -->
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+            <div class="member-img">
+              <img src="{% static 'assets/img/team/team-4.jpg' %}" class="img-fluid" alt="">
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info text-center">
+              <h4>آماندا جپسون</h4>
+              <span>حسابدار</span>
+              <p>آماندا جپسون با مدیریت مالی دقیق، اطمینان حاصل می‌کند که امور مالی شرکت به بهترین شکل انجام می‌شود.</p>
+            </div>
+          </div><!-- پایان عضو تیم -->
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="500">
+            <div class="member-img">
+              <img src="{% static 'assets/img/team/team-5.jpg' %}" class="img-fluid" alt="">
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info text-center">
+              <h4>برایان دو</h4>
+              <span>مدیر بازاریابی</span>
+              <p>برایان دو با استراتژی‌های بازاریابی نوآورانه، به رشد کسب‌وکار ما کمک می‌کند.</p>
+            </div>
+          </div><!-- پایان عضو تیم -->
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
+            <div class="member-img">
+              <img src="{% static 'assets/img/team/team-6.jpg' %}" class="img-fluid" alt="">
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info text-center">
+              <h4>ژوزفا پالاس</h4>
+              <span>عملیات</span>
+              <p>توضیحات جزئی در مورد مسئولیت‌ها و تجربیات ژوزفا پالاس در این بخش ارائه می‌شود.</p>
+            </div>
+            </div><!-- پایان عضو تیم -->
+            </div>
+            </div>
+            </section><!-- /بخش تیم -->
+            
+            <!-- بخش نظرات مشتریان -->
+            <section id="testimonials" class="testimonials section">
+            
+              <!-- عنوان بخش -->
+              <div class="container section-title" data-aos="fade-up">
+                <h2>نظرات مشتریان</h2>
+                <p>نظرات و تجربیات کاربران درباره خدمات ما</p>
+              </div><!-- پایان عنوان بخش -->
+            
+              <div class="container" data-aos="fade-up" data-aos-delay="100">
+            
+                <div class="swiper init-swiper">
+                  <script type="application/json" class="swiper-config">
+                    {
+                      "loop": true,
+                      "speed": 600,
+                      "autoplay": {
+                        "delay": 5000
+                      },
+                      "slidesPerView": "auto",
+                      "pagination": {
+                        "el": ".swiper-pagination",
+                        "type": "bullets",
+                        "clickable": true
+                      },
+                      "breakpoints": {
+                        "320": {
+                          "slidesPerView": 1,
+                          "spaceBetween": 40
+                        },
+                        "1200": {
+                          "slidesPerView": 2,
+                          "spaceBetween": 20
+                        }
+                      }
+                    }
+                  </script>
+                  <div class="swiper-wrapper">
+            
+                    <div class="swiper-slide">
+                      <div class="testimonial-wrap">
+                        <div class="testimonial-item">
+                          <img src="{% static 'assets/img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="">
+                          <h3>سائول گودمن</h3>
+                          <h4>مدیر عامل و بنیان‌گذار</h4>
+                          <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                          </div>
+                          <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>خدمات این شرکت فوق‌العاده است، از کیفیت بالا تا پشتیبانی بی‌نظیر.</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                          </p>
+                        </div>
+                      </div>
+                    </div><!-- پایان مورد نظر -->
+            
+                    <div class="swiper-slide">
+                      <div class="testimonial-wrap">
+                        <div class="testimonial-item">
+                          <img src="{% static 'assets/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
+                          <h3>سارا ویلسون</h3>
+                          <h4>طراح</h4>
+                          <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                          </div>
+                          <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>تجربه‌ی فوق‌العاده‌ای داشتم، همه چیز عالی بود و بسیار حرفه‌ای.</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                          </p>
+                        </div>
+                      </div>
+                    </div><!-- پایان مورد نظر -->
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </section><!-- /بخش نظرات مشتریان -->            
+          </main>
+  {% endblock  %}

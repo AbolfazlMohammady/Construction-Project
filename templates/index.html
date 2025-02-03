@@ -1,0 +1,654 @@
+{% extends '_base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<main class="main">
+<!-- بخش قهرمان -->
+<section id="hero" class="hero section dark-background">
+
+  <div class="info d-flex align-items-center">
+    <div class="container">
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-6 text-center">
+          <h2>به شرکت ونت خوش آمدید</h2>
+          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز.</p>
+          <a href="#get-started" class="btn-get-started">شروع کنید</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+    <div class="carousel-item">
+      <img src="{% static 'assets/img/hero-carousel/hero-carousel-1.jpg' %}" alt="اسلاید ۱">
+    </div>
+
+    <div class="carousel-item active">
+      <img src="{% static 'assets/img/hero-carousel/hero-carousel-2.jpg' %}" alt="اسلاید ۲">
+    </div>
+
+    <div class="carousel-item">
+      <img src="{% static 'assets/img/hero-carousel/hero-carousel-3.jpg' %}" alt="اسلاید ۳">
+    </div>
+
+    <div class="carousel-item">
+      <img src="{% static 'assets/img/hero-carousel/hero-carousel-4.jpg' %}" alt="اسلاید ۴">
+    </div>
+
+    <div class="carousel-item">
+      <img src="{% static 'assets/img/hero-carousel/hero-carousel-5.jpg' %}" alt="اسلاید ۵">
+    </div>
+
+    <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+    </a>
+
+    <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+    </a>
+
+  </div>
+
+</section><!-- /بخش قهرمان -->
+
+
+</main> 
+   <!-- بخش پروژه‌های ساختمانی -->
+<section id="constructions" class="constructions section">
+
+  <!-- عنوان بخش -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>پروژه‌های ساختمانی</h2>
+    <p>نیازهایی که از دل آن‌ها راه‌حل‌هایی نوآورانه و منحصر‌به‌فرد پدیدار می‌شوند</p>
+  </div><!-- پایان عنوان بخش -->
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-item">
+          <div class="row">
+            <div class="col-xl-5">
+              <div class="card-bg"><img src="{% static 'assets/img/constructions-1.jpg' %}" alt="پروژه ۱"></div>
+            </div>
+            <div class="col-xl-7 d-flex align-items-center">
+              <div class="card-body">
+                <h4 class="card-title">تمام نیازهای شما را برآورده می‌کنیم</h4>
+                <p>ما با استفاده از دانش فنی و تجربیات گسترده، راهکارهای نوآورانه‌ای را برای اجرای پروژه‌های ساختمانی ارائه می‌دهیم.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- پایان کارت -->
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-item">
+          <div class="row">
+            <div class="col-xl-5">
+              <div class="card-bg"><img src="{% static 'assets/img/constructions-2.jpg' %}" alt="پروژه ۲"></div>
+            </div>
+            <div class="col-xl-7 d-flex align-items-center">
+              <div class="card-body">
+                <h4 class="card-title">راهکارهای نوین در ساخت‌وساز</h4>
+                <p>تیم حرفه‌ای ما با استفاده از تکنولوژی‌های روز، کیفیت و ایمنی را در ساخت‌وساز تضمین می‌کند.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- پایان کارت -->
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-item">
+          <div class="row">
+            <div class="col-xl-5">
+              <div class="card-bg"><img src="{% static 'assets/img/constructions-3.jpg' %}" alt="پروژه ۳"></div>
+            </div>
+            <div class="col-xl-7 d-flex align-items-center">
+              <div class="card-body">
+                <h4 class="card-title">معماری خلاقانه و مدرن</h4>
+                <p>ما با ترکیب هنر و مهندسی، فضاهایی زیبا و کارآمد طراحی و اجرا می‌کنیم که با نیازهای روز هماهنگ باشد.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- پایان کارت -->
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="card-item">
+          <div class="row">
+            <div class="col-xl-5">
+              <div class="card-bg"><img src="{% static 'assets/img/constructions-4.jpg' %}" alt="پروژه ۴"></div>
+            </div>
+            <div class="col-xl-7 d-flex align-items-center">
+              <div class="card-body">
+                <h4 class="card-title">راه‌حل‌های پایدار و اقتصادی</h4>
+                <p>ما با استفاده از متریال باکیفیت و بهینه، ساختمان‌هایی با دوام و هزینه مناسب اجرا می‌کنیم.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- پایان کارت -->
+
+    </div>
+
+  </div>
+
+</section><!-- پایان بخش پروژه‌های ساختمانی -->
+
+<!-- بخش خدمات -->
+<section id="services" class="services section light-background">
+
+  <!-- عنوان بخش -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>خدمات</h2>
+    <p>ما با ارائه خدمات متنوع، تمام نیازهای شما را در حوزه ساخت‌وساز برآورده می‌کنیم</p>
+  </div><!-- پایان عنوان بخش -->
+
+</section><!-- پایان بخش خدمات -->
+
+<div class="container">
+
+  <div class="row gy-4">
+
+    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+      <div class="service-item position-relative">
+        <div class="icon">
+          <i class="fa-solid fa-mountain-city"></i>
+        </div>
+        <h3>پروژه‌های عمرانی</h3>
+        <p>ما پروژه‌های عمرانی را با استانداردهای بین‌المللی و بهترین کیفیت اجرا می‌کنیم تا نیازهای شما را برآورده سازیم.</p>
+        <!-- <a href="#" class="readmore stretched-link">مطالعه بیشتر <i class="bi bi-arrow-right"></i></a> -->
+      </div>
+    </div><!-- پایان آیتم خدمات -->
+
+    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+      <div class="service-item position-relative">
+        <div class="icon">
+          <i class="fa-solid fa-arrow-up-from-ground-water"></i>
+        </div>
+        <h3>مهندسی آب و فاضلاب</h3>
+        <p>ما راه‌حل‌های حرفه‌ای برای تصفیه و مدیریت آب و فاضلاب ارائه می‌دهیم تا بهینه‌سازی مصرف آب را تضمین کنیم.</p>
+        <!-- <a href="#" class="readmore stretched-link">مطالعه بیشتر <i class="bi bi-arrow-right"></i></a> -->
+      </div>
+    </div><!-- پایان آیتم خدمات -->
+
+    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+      <div class="service-item position-relative">
+        <div class="icon">
+          <i class="fa-solid fa-compass-drafting"></i>
+        </div>
+        <h3>طراحی و معماری</h3>
+        <p>ما با استفاده از طراحی‌های مدرن و کارآمد، فضاهایی زیبا و کاربردی خلق می‌کنیم که مطابق با نیازهای شما باشد.</p>
+        <!-- <a href="#" class="readmore stretched-link">مطالعه بیشتر <i class="bi bi-arrow-right"></i></a> -->
+      </div>
+    </div><!-- پایان آیتم خدمات -->
+
+    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+      <div class="service-item position-relative">
+        <div class="icon">
+          <i class="fa-solid fa-trowel-bricks"></i>
+        </div>
+        <h3>ساخت و ساز</h3>
+        <p>با استفاده از مواد اولیه با کیفیت و نیروی انسانی متخصص، پروژه‌های ساخت‌وساز را با دقت و سرعت انجام می‌دهیم.</p>
+        <!-- <a href="#" class="readmore stretched-link">مطالعه بیشتر <i class="bi bi-arrow-right"></i></a> -->
+      </div>
+    </div><!-- پایان آیتم خدمات -->
+
+    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+      <div class="service-item position-relative">
+        <div class="icon">
+          <i class="fa-solid fa-helmet-safety"></i>
+        </div>
+        <h3>ایمنی و استانداردها</h3>
+        <p>ما با رعایت استانداردهای ایمنی و بهداشت حرفه‌ای، محیطی ایمن و مطمئن برای پروژه‌های عمرانی ایجاد می‌کنیم.</p>
+        <!-- <a href="#" class="readmore stretched-link">مطالعه بیشتر <i class="bi bi-arrow-right"></i></a> -->
+      </div>
+    </div><!-- پایان آیتم خدمات -->
+
+    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+      <div class="service-item position-relative">
+        <div class="icon">
+          <i class="fa-solid fa-arrow-up-from-ground-water"></i>
+        </div>
+        <h3>مدیریت پروژه</h3>
+        <p>با مدیریت حرفه‌ای، پروژه‌ها را در زمان مشخص و با کمترین هزینه به بهره‌برداری می‌رسانیم.</p>
+        <!-- <a href="#" class="readmore stretched-link">مطالعه بیشتر <i class="bi bi-arrow-right"></i></a> -->
+      </div>
+    </div><!-- پایان آیتم خدمات -->
+
+  </div>
+
+</div>
+
+
+ <!-- بخش خدمات جایگزین -->
+<section id="alt-services" class="alt-services section">
+
+  <div class="container">
+
+    <div class="row justify-content-around gy-4">
+      <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src="{% static 'assets/img/alt-services.jpg' %}" alt="خدمات جایگزین"></div>
+
+      <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+        <h3>خدمات ویژه و منحصر‌به‌فرد برای شما</h3>
+        <p>ارائه خدماتی باکیفیت و حرفه‌ای که نیازهای شما را در سریع‌ترین زمان و بالاترین سطح رضایت برطرف می‌کند.</p>
+
+        <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+          <i class="bi bi-easel flex-shrink-0"></i>
+          <div>
+            <h4><a href="" class="stretched-link">مشاوره تخصصی</a></h4>
+            <p>تیم ما آماده ارائه مشاوره و راهکارهای خلاقانه برای بهبود کسب‌وکار و رشد شما است.</p>
+          </div>
+        </div><!-- پایان آیکون باکس -->
+
+        <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+          <i class="bi bi-patch-check flex-shrink-0"></i>
+          <div>
+            <h4><a href="" class="stretched-link">استانداردهای کیفیت</a></h4>
+            <p>تمام خدمات ما مطابق با جدیدترین استانداردهای جهانی ارائه می‌شود.</p>
+          </div>
+        </div><!-- پایان آیکون باکس -->
+
+        <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="500">
+          <i class="bi bi-brightness-high flex-shrink-0"></i>
+          <div>
+            <h4><a href="" class="stretched-link">طراحی خلاقانه</a></h4>
+            <p>ارائه راهکارهای طراحی مدرن و کارآمد برای افزایش جذابیت و عملکرد پروژه‌های شما.</p>
+          </div>
+        </div><!-- پایان آیکون باکس -->
+
+        <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="600">
+          <i class="bi bi-brightness-high flex-shrink-0"></i>
+          <div>
+            <h4><a href="" class="stretched-link">مدیریت حرفه‌ای</a></h4>
+            <p>با مدیریت حرفه‌ای و دقیق، پروژه‌های شما را در زمان مناسب و با کمترین هزینه به نتیجه می‌رسانیم.</p>
+          </div>
+        </div><!-- پایان آیکون باکس -->
+
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- پایان بخش خدمات جایگزین -->
+
+<!-- بخش ویژگی‌ها -->
+<section id="features" class="features section">
+
+  <div class="container">
+
+    <ul class="nav nav-tabs row g-2 d-flex" data-aos="fade-up" data-aos-delay="100" role="tablist">
+
+      <li class="nav-item col-3" role="presentation">
+        <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1" aria-selected="true" role="tab">
+          <h4>طراحی مدرن</h4>
+        </a>
+      </li><!-- پایان آیتم تب -->
+
+      <li class="nav-item col-3" role="presentation">
+        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2" aria-selected="false" tabindex="-1" role="tab">
+          <h4>کارایی بالا</h4>
+        </a>
+      </li><!-- پایان آیتم تب -->
+
+      <li class="nav-item col-3" role="presentation">
+        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3" aria-selected="false" tabindex="-1" role="tab">
+          <h4>امنیت تضمین‌شده</h4>
+        </a>
+      </li><!-- پایان آیتم تب -->
+
+      <li class="nav-item col-3" role="presentation">
+        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4" aria-selected="false" tabindex="-1" role="tab">
+          <h4>پشتیبانی ۲۴/۷</h4>
+        </a>
+      </li><!-- پایان آیتم تب -->
+
+    </ul>
+
+    <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+      <div class="tab-pane fade active show" id="features-tab-1" role="tabpanel">
+        <div class="row">
+          <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+            <h3>طراحی منحصر‌به‌فرد و کاربرپسند</h3>
+            <p class="fst-italic">
+              ما با استفاده از طراحی‌های مدرن و کاربرپسند، تجربه‌ای لذت‌بخش را برای کاربران شما فراهم می‌کنیم.
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-all"></i> <span>طراحی جذاب و حرفه‌ای برای تمامی نیازهای شما.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>رعایت اصول تجربه کاربری برای سهولت استفاده.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>بهینه‌سازی عملکرد برای سرعت بالاتر و مصرف بهینه منابع.</span></li>
+            </ul>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 text-center">
+            <img src="{% static 'assets/img/features-1.jpg' %}" alt="ویژگی‌های طراحی" class="img-fluid">
+          </div>
+        </div>
+      </div><!-- پایان آیتم محتوای تب -->
+
+      <div class="tab-pane fade" id="features-tab-2" role="tabpanel">
+        <div class="row">
+          <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+            <h3>کارایی بالا و عملکرد بهینه</h3>
+            <p class="fst-italic">
+              با استفاده از جدیدترین تکنولوژی‌ها، سیستم‌هایی قدرتمند و کارآمد ارائه می‌دهیم.
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-all"></i> <span>حداکثر سرعت و کمترین مصرف منابع.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>بهینه‌سازی شده برای تمامی دستگاه‌ها و مرورگرها.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>استفاده از تکنولوژی‌های روز دنیا برای بالاترین بهره‌وری.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>امکان شخصی‌سازی بر اساس نیازهای شما.</span></li>
+            </ul>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 text-center">
+            <img src="{% static 'assets/img/features-2.jpg' %}" alt="ویژگی‌های کارایی" class="img-fluid">
+          </div>
+        </div>
+      </div><!-- پایان آیتم محتوای تب -->
+
+    </div>
+
+  </div>
+
+          <div class="tab-pane fade" id="features-tab-3" role="tabpanel">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>امنیت تضمین‌شده</h3>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span>استفاده از پروتکل‌های امنیتی پیشرفته برای حفظ اطلاعات شما.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>حفاظت در برابر تهدیدات سایبری و حملات مخرب.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>رمزگذاری پیشرفته برای امنیت بالاتر و جلوگیری از دسترسی غیرمجاز.</span></li>
+                </ul>
+                <p class="fst-italic">
+                  ما با بهره‌گیری از جدیدترین استانداردهای امنیتی، محیطی ایمن و مطمئن برای کاربران خود فراهم کرده‌ایم.
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="{% static 'assets/img/features-3.jpg' %}" alt="امنیت تضمین‌شده" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- پایان آیتم محتوای تب -->
+
+          <div class="tab-pane fade" id="features-tab-4" role="tabpanel">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>پشتیبانی ۲۴/۷</h3>
+                <p class="fst-italic">
+                  تیم ما به صورت شبانه‌روزی آماده پاسخگویی به سوالات و مشکلات شما است تا تجربه‌ای بی‌نقص از خدمات ما داشته باشید.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span>پشتیبانی دائمی و پاسخگویی سریع به مشکلات کاربران.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>تیم متخصص و حرفه‌ای برای راهنمایی و حل مشکلات.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>امکان ارتباط از طریق چت آنلاین، ایمیل و تماس تلفنی در هر زمان از شبانه‌روز.</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="{% static 'assets/img/features-4.jpg' %}" alt="پشتیبانی ۲۴/۷" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </section>
+<!-- End tab content item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Features Section -->
+  <!-- بخش نظرات -->
+<section id="testimonials" class="testimonials section">
+
+  <!-- عنوان بخش -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>نظرات کاربران</h2>
+    <p>نیازهای آن‌ها به‌طور واضح با فرار از چیزهای مختلف نشان می‌دهند که واقعیات را درک کرده‌اند.</p>
+  </div><!-- پایان عنوان بخش -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="swiper init-swiper">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          },
+          "breakpoints": {
+            "320": {
+              "slidesPerView": 1,
+              "spaceBetween": 40
+            },
+            "1200": {
+              "slidesPerView": 2,
+              "spaceBetween": 20
+            }
+          }
+        }
+      </script>
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="testimonial-wrap">
+            <div class="testimonial-item">
+              <img src="{% static 'assets/img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="">
+              <h3>سول گودمن</h3>
+              <h4>مدیر عامل و بنیان‌گذار</h4>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span>پروین ایاتس پورس کونسکوات سم کوره دیگنی سیم دونک پورتیتورا انتم سویپتیت رنکوس. اکیزانتوم کوا، اولتریسیس اگت اید، الیکام اگت نیب ایت. ماسن علیکام، ریسوس ات سمپر.</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+        </div><!-- پایان نظرات -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-wrap">
+            <div class="testimonial-item">
+              <img src="{% static 'assets/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
+              <h3>سارا ویلسون</h3>
+              <h4>طراح</h4>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span>اکسپورٹ تیمپور ایلوم تامین مالس مالس ارم قایر ایریس لبوره که کلم کیدیم ارم مالس کوورم ویلت فور ارم ویلت سونت ایلگای نستری فور که ایلگای ایمیم بنادلاس.</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+        </div><!-- پایان نظرات -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-wrap">
+            <div class="testimonial-item">
+              <img src="{% static 'assets/img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
+              <h3>جنا کارلیس</h3>
+              <h4>مالک فروشگاه</h4>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span>انی نمینی کیم اکسپورت دیس لابوره کالم که مگنا انیم سینت که چیوم ناولینی کئوم کیمی کر مینی تول</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+        </div><!-- پایان نظرات -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-wrap">
+            <div class="testimonial-item">
+              <img src="{% static 'assets/img/testimonials/testimonials-4.jpg' %}" class="testimonial-img" alt="">
+              <h3>مت برندون</h3>
+              <h4>فریلنسر</h4>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span>فوجیات انیم ارم که کالم دولور دولور امت نولا کالبا ملتی فژی تینی مینین دوبسن امد آلامت فاریف تانی پدر تومی توگود اتقلوب تامی دلکھی فبی لنٹنگ برد</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+        </div><!-- پایان نظرات -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-wrap">
+            <div class="testimonial-item">
+              <img src="{% static 'assets/img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="">
+              <h3>جان لارسن</h3>
+              <h4>کارآفرین</h4>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span>کویسمورم الگاری سیدایگرس کلگی اونوهام یوک فلوریمادیستم؟ سرای سیجوم توگیاردسد</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+        </div><!-- پایان نظرات -->
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+
+</section><!-- پایان بخش نظرات -->
+
+
+   <!-- بخش پست‌های وبلاگ اخیر -->
+<section id="recent-blog-posts" class="recent-blog-posts section">
+
+  <!-- عنوان بخش -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>پست‌های وبلاگ اخیر</h2>
+    <p>نیازهای آن‌ها به‌طور واضح با فرار از چیزهای مختلف نشان می‌دهند که واقعیات را درک کرده‌اند.</p>
+  </div><!-- پایان عنوان بخش -->
+
+  <div class="container">
+
+    <div class="row gy-5">
+
+      <div class="col-xl-4 col-md-6">
+        <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="post-img position-relative overflow-hidden">
+            <img src="{% static 'assets/img/blog/blog-1.jpg' %}" class="img-fluid" alt="">
+            <span class="post-date">12 دسامبر</span>
+          </div>
+
+          <div class="post-content d-flex flex-column">
+
+            <h3 class="post-title">درد را درک می‌کنیم. ولی آیا تغییرات ضروری‌اند؟</h3>
+
+            <div class="meta d-flex align-items-center">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-person"></i> <span class="ps-2">جولیا پارکر</span>
+              </div>
+              <span class="px-3 text-black-50">/</span>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-folder2"></i> <span class="ps-2">سیاست</span>
+              </div>
+            </div>
+
+            <hr>
+
+            <!-- <a href="blog-details.html" class="readmore stretched-link"><span>ادامه مطلب</span><i class="bi bi-arrow-right"></i></a> -->
+
+          </div>
+
+        </div>
+      </div><!-- پایان پست -->
+
+      <div class="col-xl-4 col-md-6">
+        <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="post-img position-relative overflow-hidden">
+            <img src="{% static 'assets/img/blog/blog-2.jpg' %}" class="img-fluid" alt="">
+            <span class="post-date">17 جولای</span>
+          </div>
+
+          <div class="post-content d-flex flex-column">
+
+            <h3 class="post-title">وچرا مطالعات مربوط به ورزش همچنان مهم هستند؟</h3>
+
+            <div class="meta d-flex align-items-center">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-person"></i> <span class="ps-2">ماریو داگلاس</span>
+              </div>
+              <span class="px-3 text-black-50">/</span>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-folder2"></i> <span class="ps-2">ورزش</span>
+              </div>
+            </div>
+
+            <hr>
+
+            <!-- <a href="blog-details.html" class="readmore stretched-link"><span>ادامه مطلب</span><i class="bi bi-arrow-right"></i></a> -->
+
+          </div>
+
+        </div>
+      </div><!-- پایان پست -->
+
+      <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="post-item position-relative h-100">
+
+          <div class="post-img position-relative overflow-hidden">
+            <img src="{% static 'assets/img/blog/blog-3.jpg' %}" class="img-fluid" alt="">
+            <span class="post-date">5 سپتامبر</span>
+          </div>
+
+          <div class="post-content d-flex flex-column">
+
+            <h3 class="post-title">چرا باید روی اقتصاد جهانی تمرکز کنیم؟</h3>
+
+            <div class="meta d-flex align-items-center">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-person"></i> <span class="ps-2">لیزا هانتر</span>
+              </div>
+              <span class="px-3 text-black-50">/</span>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-folder2"></i> <span class="ps-2">اقتصاد</span>
+              </div>
+            </div>
+
+            <hr>
+
+            <!-- <a href="blog-details.html" class="readmore stretched-link"><span>ادامه مطلب</span><i class="bi bi-arrow-right"></i></a> -->
+
+          </div>
+
+        </div>
+      </div><!-- پایان پست -->
+
+    </div>
+
+  </div>
+
+</section><!-- پایان بخش پست‌های وبلاگ اخیر -->
+
+
+  </main>
+  {% endblock  %}
