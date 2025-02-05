@@ -2,6 +2,10 @@ import json
 from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView, DetailView
 from .models import Project
+from django.shortcuts import render, redirect, get_object_or_404
+from django.contrib.auth.decorators import user_passes_test
+from django.contrib import messages
+from .forms import ProjectForm
 
 
 class ProjectListView(ListView):
@@ -36,3 +40,30 @@ def project_chart_view(request):
     })
 
     return render(request, 'project/project_chart.html', {'chart_data': chart_data})
+
+
+
+def is_superadmin(user):
+    return user.is_superuser
+
+@user_passes_test(is_superadmin)
+def project_management(request):
+    projects = Project.objects.all()
+    
+    if request.method == 'POST':
+        form = ProjectForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "✅ پروژه با موفقیت اضافه شد!")
+            return redirect('project-management')
+    else:
+        form = ProjectForm()
+
+    return render(request, 'admin_panel/project_management.html', {'projects': projects, 'form': form})
+
+@user_passes_test(is_superadmin)
+def delete_project(request, project_id):
+    project = get_object_or_404(Project, id=project_id)
+    project.delete()
+    messages.success(request, "❌ پروژه با موفقیت حذف شد!")
+    return redirect('project-management')

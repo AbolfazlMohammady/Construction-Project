@@ -1,12 +1,89 @@
-{% extends "_base.html" %}
-
 {% block title %}Logout{% endblock title %}
 
 {% block content %}
-<h1>Logout</h1>
-<h2>Are you sure you want to logout?</h2>
-<form method="post">
-    {% csrf_token %}
-    <input type="submit" value="Yes">
-</form>
+<div class="logout-container">
+    <h1 class="logout-title">Logout</h1>
+    <h2 class="logout-subtitle">Are you sure you want to logout?</h2>
+    
+    <form method="post" class="logout-form">
+        {% csrf_token %}
+        <div class="form-actions">
+            <input type="submit" value="Yes" class="btn btn-primary">
+            <a href="{% url 'home' %}" class="btn btn-secondary">Cancel</a>
+        </div>
+    </form>
+</div>
 {% endblock content %}
+
+{% block extra_css %}
+<style>
+    /* Container for centering the content */
+    .logout-container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #f9f9f9;
+    }
+
+    /* Title for logout */
+    .logout-title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #333;
+    }
+
+    /* Subtitle for confirmation message */
+    .logout-subtitle {
+        font-size: 1.2rem;
+        color: #666;
+        margin: 10px 0;
+    }
+
+    /* Style for the form */
+    .logout-form {
+        text-align: center;
+    }
+
+    /* Action buttons */
+    .form-actions {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    /* Primary button */
+    .btn-primary {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        transition: background-color 0.3s;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+    /* Secondary button */
+    .btn-secondary {
+        background-color: #6c757d;
+        color: white;
+        border: none;
+        transition: background-color 0.3s;
+    }
+
+    .btn-secondary:hover {
+        background-color: #495057;
+    }
+</style>
+{% endblock %}

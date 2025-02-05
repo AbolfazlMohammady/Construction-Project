@@ -39,6 +39,12 @@
 </head>
 
 <body class="index-page">
+  {% if messages %}
+{% for message in messages %}
+    <div class="alert alert-success">{{ message }}</div>
+{% endfor %}
+{% endif %}
+
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -57,7 +63,16 @@
           <button class="btn"><a href="{% url 'account_login' %}" class="active">ورود</a></button>
           {% endif %}
           <li><a href="{% url 'home' %}">خانه</a></li>
+          
+          {% if user.is_authenticated  %}
+            
+          <li><a href="{% url 'project_chart' %}">چارت</a></li>
+          {% endif %}
+          
           <li><a href="{% url 'about' %}">درباره ما</a></li>
+          {% if user.is_staff %}                          
+          <a href="{% url 'project-management' %}" class="nav-item nav-link">مدیریت بلاگ</a>
+          {% endif %}    
           <li><a href="{% url 'project_list' %}">پروژه ها</a></li>
           <li><a href="{% url 'contact' %}" class="nav-item nav-link">تماس با ما</a></li>
           <li>
